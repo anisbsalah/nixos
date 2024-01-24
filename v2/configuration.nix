@@ -26,14 +26,36 @@ in
     ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-  boot.loader.grub.useOSProber = true;
-  boot.initrd.systemd.enable = true;
-  boot.initrd.verbose = false;
+  boot.loader = {
+    grub = {
+      enable = true;
+      device = "/dev/sda";
+      useOSProber = true;
+      timeoutStyle = "menu";
+    };
+  };
+  boot.initrd = {
+    systemd.enable = true;
+    verbose = false;
+  };
+  boot.consoleLogLevel = 3;
+  boot.kernelParams = [
+    "loglevel=3"
+    "quiet"
+    "splash"
+  ];
+
+  # Plymouth.
+  boot.plymouth = {
+    enable = true;
+    theme = "spinner";
+  };
 
   # Kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  # Swappiness.
+  boot.kernel.sysctl = { "vm.swappiness" = 10; };
 
   # Zram.
   zramSwap = {
@@ -42,9 +64,6 @@ in
     memoryPercent = 100;
     swapDevices = 1;
   };
-
-  # Swappiness.
-  boot.kernel.sysctl = { "vm.swappiness" = 10; };
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -121,7 +140,7 @@ in
 
   programs.dconf.enable = true;
   programs.zsh.enable = true;
-  
+
   # Polkit
   security.polkit.enable = true;
   security.polkit.extraConfig = ''

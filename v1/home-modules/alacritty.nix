@@ -55,7 +55,7 @@ in
             yellow = "0xb65619";
           };
         };
-        
+
         font = {
           size = 12.0;
           normal = {

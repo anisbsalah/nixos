@@ -25,7 +25,9 @@ in
     ffmpegthumbnailer
     # flameshot
     font-manager
+    gcc
     git
+    glibc
     gnome.dconf-editor
     gnome.gnome-disk-utility
     gnome.gvfs
@@ -50,6 +52,7 @@ in
     papirus-icon-theme
     pavucontrol
     qbittorrent
+    qogir-icon-theme
     qt6Packages.qtstyleplugin-kvantum
     ripgrep
     rofi
@@ -82,15 +85,15 @@ in
       };
       name = "catppuccin-cursors";
       installPhase = ''
-      mkdir -p $out/share/icons
-      cp -r $src/usr/share/icons/Catppuccin-Frappe-Light-Cursors $out/share/icons/ 
+        mkdir -p $out/share/icons
+        cp -r $src/usr/share/icons/Catppuccin-Frappe-Light-Cursors $out/share/icons/
       '';
     })
   ];
 
   nixpkgs.overlays = [
     (final: prev: {
-      dwm = prev.dwm.overrideAttrs (old: {src = /home/${username}/.config/dmenu-flexipatch;});
+      dwm = prev.dwm.overrideAttrs (old: { src = /home/${username}/.config/dmenu-flexipatch; });
     })
   ];
 }

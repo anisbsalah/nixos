@@ -24,6 +24,7 @@ in
         enable = true;
         plugins = [ "sudo" ];
       };
+      shellAliases = import ./shell_aliases.nix { inherit pkgs; };
     };
   };
 }

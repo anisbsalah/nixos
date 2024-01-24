@@ -9,6 +9,8 @@ in
     bash = {
       enable = true;
       enableCompletion = true;
+      shellAliases = import ./shell_aliases.nix { inherit pkgs; };
+      historyControl = [ "ignorespace" "ignoredups" "erasedups" ];
     };
   };
 }

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   # List services that you want to enable:
@@ -31,12 +31,15 @@
     dbus.enable = true;
 
     # --------------------------------- Flatpak
-    
+
     flatpak.enable = true;
 
     # --------------------------------- Gvfs
 
-    gvfs.enable = true;
+    gvfs = {
+      enable = true;
+      package = lib.mkForce pkgs.gnome3.gvfs;
+    };
 
     # --------------------------------- OpenSSH
 
@@ -57,13 +60,15 @@
 
     samba = {
       enable = true;
+      package = pkgs.samba4Full;
+      openFirewall = true;
       securityType = "user";
       extraConfig = ''
         workgroup = WORKGROUP
         server string = smbnix
         netbios name = smbnix
         server role = standalone server
-        #security = user 
+        security = user
         #use sendfile = yes
         #max protocol = smb2
         # note: localhost is the ipv6 localhost ::1
@@ -82,6 +87,7 @@
           "writable" = "yes";
           "create mask" = "0644";
           "directory mask" = "0755";
+          "valid users" = "anisbsalah";
         };
       };
     };
