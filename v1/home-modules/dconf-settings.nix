@@ -4,7 +4,7 @@ let
   username = "anisbsalah";
   wallpaperImg = pkgs.fetchurl {
     url = "https://raw.githubusercontent.com/anisbsalah/Wallpapers/main/AbS-Wallpapers/abs-54.jpg";
-    sha256 = "0havshx4jc1h8v2pdzx9qmbbcvcxnp8s6hki7r7zbzjiv5pb5wn9";
+    sha256 = "sha256-yfKybtlR/vVPPnFCo9G1nW22VsWp/3bFRjAwSTrUW0E=";
   };
 in
 
