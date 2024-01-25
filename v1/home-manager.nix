@@ -13,6 +13,7 @@ in
     ./home-modules/git.nix
     ./home-modules/rofi.nix
     ./home-modules/starship.nix
+    ./home-modules/wallpaper.nix
     ./home-modules/wezterm.nix
     ./home-modules/zsh.nix
   ];

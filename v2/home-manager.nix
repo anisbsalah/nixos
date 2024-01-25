@@ -15,6 +15,7 @@ in
     ./home-modules/bash.nix
     ./home-modules/dconf-settings.nix
     ./home-modules/git.nix
+    ./home-modules/wallpaper.nix
     ./home-modules/zsh.nix
   ];
 
