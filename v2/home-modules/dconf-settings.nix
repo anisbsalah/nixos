@@ -12,31 +12,29 @@ in
 
       settings = {
 
-        "org/gnome/desktop/interface".color-scheme = "prefer-dark";
-        "org/gnome/desktop/interface".cursor-theme = "Catppuccin-Frappe-Light-Cursors";
-        "org/gnome/desktop/interface".cursor-size = 16;
-        "org/gnome/desktop/interface".gtk-theme = "Arc-Dark";
-        "org/gnome/desktop/interface".icon-theme = "Papirus-Dark";
+        # Appearance
         "org/cinnamon/desktop/interface".cursor-theme = "Catppuccin-Frappe-Light-Cursors";
         "org/cinnamon/desktop/interface".cursor-size = 16;
         "org/cinnamon/desktop/interface".gtk-theme = "Arc-Dark";
         "org/cinnamon/desktop/interface".icon-theme = "Papirus-Dark";
         "org/cinnamon/theme".name = "Arc-Dark";
 
+        # Font selection
         "org/cinnamon/desktop/interface".font-name = "Noto Sans 11";
-        "org/nemo/desktop".font = "Noto Sans 11";
-        "org/gnome/desktop/interface".document-font-name = "Noto Sans 11";
-        "org/gnome/desktop/interface".monospace-font-name = "Hack 10";
         "org/cinnamon/desktop/wm/preferences".titlebar-font = "Noto Sans Bold 11";
+        "org/nemo/desktop".font = "Noto Sans 11";
 
+        # Keyboard & Touchpad
         "org/cinnamon/desktop/interface".keyboard-layout-show-flags = false;
         "org/cinnamon/desktop/peripherals/touchpad".edge-scrolling-enabled = true;
         "org/cinnamon/desktop/peripherals/touchpad".two-finger-scrolling-enabled = false;
         "org/cinnamon/desktop/peripherals/touchpad".natural-scroll = false;
 
+        # Nemo
         "org/nemo/preferences".show-new-folder-icon-toolbar = true;
         "org/nemo/preferences".show-open-in-terminal-toolbar = true;
 
+        # Xed
         "org/x/editor/plugins".active-plugins = "['wordcompletion', 'time', 'textsize', 'taglist', 'sort', 'modelines', 'joinlines', 'filebrowser', 'docinfo', 'open-uri-context-menu', 'bracketcompletion']";
         "org/x/editor/preferences/editor".bracket-matching = true;
         "org/x/editor/preferences/editor".display-line-numbers = true;
