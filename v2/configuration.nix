@@ -34,10 +34,12 @@ in
       timeoutStyle = "menu";
     };
   };
+
   boot.initrd = {
     systemd.enable = true;
     verbose = false;
   };
+
   boot.consoleLogLevel = 3;
   boot.kernelParams = [
     "loglevel=3"
