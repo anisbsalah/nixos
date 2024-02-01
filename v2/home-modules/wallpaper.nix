@@ -10,7 +10,7 @@ in
 
 {
   home-manager.users.${username} = {
-    dconf.settings."org/gnome/desktop/background".picture-uri = "file://${wallpaperImg}";
-    dconf.settings."org/gnome/desktop/background".picture-options = "stretched";
+    dconf.settings."org/cinnamon/desktop/background".picture-uri = "file://${wallpaperImg}";
+    dconf.settings."org/cinnamon/desktop/background".picture-options = "stretched";
   };
 }
