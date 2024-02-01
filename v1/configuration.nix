@@ -40,18 +40,18 @@ in
     verbose = false;
   };
 
-  boot.consoleLogLevel = 3;
-  boot.kernelParams = [
-    "loglevel=3"
-    "quiet"
-    "splash"
-  ];
+  #boot.consoleLogLevel = 3;
+  #boot.kernelParams = [
+  #  "loglevel=3"
+  #  "quiet"
+  #  "splash"
+  #];
 
   # Plymouth.
-  boot.plymouth = {
-    enable = true;
-    theme = "spinner";
-  };
+  #boot.plymouth = {
+  #  enable = true;
+  #  theme = "spinner";
+  #};
 
   # Kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
