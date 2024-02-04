@@ -23,7 +23,7 @@ in
         hostname = {
           ssh_only = false;
           ssh_symbol = " ";
-          format = "[  ](bold red) ";
+          format = "[  ](bold blue) ";
           trim_at = ".";
           disabled = false;
         };
