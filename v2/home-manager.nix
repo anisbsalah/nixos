@@ -11,6 +11,7 @@ in
     ./home-modules/rofi
     ./home-modules/starship
     ./home-modules/wezterm
+    ./home-modules/yazi
     ./home-modules/appearance.nix
     ./home-modules/bash.nix
     ./home-modules/dconf-settings.nix

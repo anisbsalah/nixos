@@ -15,6 +15,7 @@ in
     ./home-modules/starship.nix
     ./home-modules/wallpaper.nix
     ./home-modules/wezterm.nix
+    ./home-modules/yazi.nix
     ./home-modules/zsh.nix
   ];
 
