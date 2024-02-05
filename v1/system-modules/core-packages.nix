@@ -17,14 +17,18 @@ in
     bat
     bibata-cursors
     brave
+    btop
     curl
     edid-decode
     evince
     eza
+    fd
     ffmpeg_6-full
     ffmpegthumbnailer
+    file
     # flameshot
     font-manager
+    fzf
     gcc
     git
     glibc
@@ -32,10 +36,12 @@ in
     gnome.gnome-disk-utility
     gnome.gvfs
     gparted
+    htop
     hw-probe
     # hwinfo
     # imlib2Full
     # inxi
+    jq
     # killall
     # kitty
     # libreoffice-still
@@ -51,6 +57,7 @@ in
     openssh
     papirus-icon-theme
     pavucontrol
+    poppler
     qbittorrent
     qogir-icon-theme
     qt6Packages.qtstyleplugin-kvantum
@@ -60,7 +67,9 @@ in
     shfmt
     # simplescreenrecorder
     sublime4
-    # telegram-desktop
+    telegram-desktop
+    ueberzugpp
+    unar
     vlc
     vscodium
     wget
@@ -70,6 +79,8 @@ in
     xorg.libXinerama
     xorg.xkill
     # yad
+    yazi
+    zoxide
     zsh
     zsh-autosuggestions
     zsh-completions
