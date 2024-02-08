@@ -55,7 +55,7 @@ in
           font = wezterm.font("JetBrainsMono Nerd Font"),
           font_size = 13.0,
 
-          -- Colors
+          -- Colors (Arc-Dark)
           colors = {
             foreground = "#d3dae3",
             background = "#2f343f",
