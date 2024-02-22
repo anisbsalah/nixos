@@ -23,6 +23,9 @@ in
         "org/cinnamon/desktop/interface".font-name = "Noto Sans 11";
         "org/cinnamon/desktop/wm/preferences".titlebar-font = "Noto Sans Bold 11";
         "org/nemo/desktop".font = "Noto Sans 11";
+        "org/gnome/desktop/interface".font-name = "Noto Sans 11";
+        "org/gnome/desktop/interface".document-font-name = "Noto Sans 11";
+        "org/gnome/desktop/interface".monospace-font-name = "Hack 10";
 
         # Keyboard & Touchpad
         "org/cinnamon/desktop/interface".keyboard-layout-show-flags = false;
