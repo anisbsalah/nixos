@@ -18,6 +18,11 @@ in
         "org/cinnamon/desktop/interface".gtk-theme = "Arc-Dark";
         "org/cinnamon/desktop/interface".icon-theme = "Papirus-Dark";
         "org/cinnamon/theme".name = "Arc-Dark";
+        "org/gnome/desktop/interface".color-scheme = "prefer-dark";
+        "org/gnome/desktop/interface".cursor-theme = "Catppuccin-Frappe-Light-Cursors";
+        "org/gnome/desktop/interface".cursor-size = 16;
+        "org/gnome/desktop/interface".gtk-theme = "Arc-Dark";
+        "org/gnome/desktop/interface".icon-theme = "Papirus-Dark";
 
         # Font selection
         "org/cinnamon/desktop/interface".font-name = "Noto Sans 11";
